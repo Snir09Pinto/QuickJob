@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <FrameLayout
+                android:id="@+id/lml_fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/lml_bottom_navigation_view"
+                >
+
+
+            </FrameLayout>
+
+
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/lml_bottom_navigation_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:elevation="0dp"
+                app:itemIconTint="@color/bottom_navigation_bar_selector"
+                app:itemRippleColor="@color/white"
+                app:labelVisibilityMode="unlabeled"
+                app:menu="@menu/bottom_navigation_menu"
+                />
+
+        </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

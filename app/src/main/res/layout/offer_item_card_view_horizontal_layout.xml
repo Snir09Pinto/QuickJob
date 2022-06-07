@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:elevation="0dp"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true"
+    app:cardCornerRadius="20dp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/oicvhl_offer_date_and_time_text_view"
+                app:layout_constraintStart_toStartOf="@id/oicvhl_offer_date_and_time_text_view"
+                android:maxLines="1"
+                android:breakStrategy="simple"
+                android:ellipsize="end"
+                android:gravity="top|left"
+                android:id="@+id/offer_description_text_view"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:background="@drawable/light_gray_rounded_background"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_height="20dp"
+                android:text=""
+                android:layout_margin="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/oicvhl_offer_date_and_time_text_view"
+                app:layout_constraintBottom_toBottomOf="@id/oicvhl_offer_date_and_time_text_view"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:fontFamily="@font/open_sans_bold"
+                android:id="@+id/oicvhl_offer_state_text_view"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text=""
+                android:ellipsize="end"
+                android:layout_marginRight="20dp"
+                android:maxLines="1"
+                app:layout_constraintRight_toLeftOf="@id/oicvhl_offer_state_text_view"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="15sp"
+                android:id="@+id/oicvhl_offer_date_and_time_text_view"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dollar_rounded_background_icon"
+                app:layout_constraintTop_toBottomOf="@id/offer_description_text_view"
+                app:layout_constraintStart_toStartOf="@id/oicvhl_offer_date_and_time_text_view"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/dark_gray"
+                android:id="@+id/oicvhl_dollar_icon_rounded_background"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                android:ellipsize="end"
+                android:layout_marginRight="20dp"
+                android:maxLines="1"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:gravity="center|left"
+                android:layout_marginLeft="5dp"
+                app:layout_constraintStart_toEndOf="@id/oicvhl_dollar_icon_rounded_background"
+                app:layout_constraintTop_toTopOf="@id/oicvhl_dollar_icon_rounded_background"
+                app:layout_constraintBottom_toBottomOf="@id/oicvhl_dollar_icon_rounded_background"
+                android:id="@+id/oicvhl_offer_price_text_view"
+                android:textStyle="bold"
+                />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

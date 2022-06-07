@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/eupal_user_image_card_view"
+        app:cardCornerRadius="100dp"
+        app:cardBackgroundColor="@color/light_gray"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="10dp"
+        >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/user_image_image_view"
+                android:scaleType="centerCrop"
+                />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@id/eupal_user_image_card_view"
+        app:layout_constraintTop_toTopOf="@id/eupal_user_image_card_view"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toStartOf="@id/cil_unread_messages_card_view"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_regular"
+        app:layout_constraintRight_toLeftOf="@id/cil_unread_messages_card_view"
+        android:id="@+id/user_name_text_view"
+        android:maxLines="1"
+        android:ellipsize="end"
+        />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toStartOf="@id/cil_unread_messages_card_view"
+        app:layout_constraintStart_toEndOf="@id/eupal_user_image_card_view"
+        app:layout_constraintBottom_toBottomOf="@id/eupal_user_image_card_view"
+        app:layout_constraintTop_toBottomOf="@id/user_name_text_view"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="17sp"
+        android:textColor="@color/dark_gray"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_regular"
+        android:id="@+id/cil_last_message_text_view"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintBottom_toTopOf="@id/cil_unread_messages_card_view"
+        app:layout_constraintEnd_toEndOf="@id/cil_unread_messages_card_view"
+        app:layout_constraintStart_toEndOf="@id/eupal_user_image_card_view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/cil_last_message_date_text_view"
+        android:gravity="end|center"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cil_unread_messages_card_view"
+        app:cardCornerRadius="200dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="@color/light_green"
+        android:layout_marginRight="10dp"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/cil_unread_messages_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

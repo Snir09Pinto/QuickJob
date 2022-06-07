@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/light_gray">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Random Subcategories"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/black"
+                    android:gravity="center|left"
+                    android:textSize="17sp"
+                    android:id="@+id/hfl_subcategories_title_text_view"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/hfl_subcategories_recycler_view"
+                    />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:id="@+id/hfl_subcategories_recycler_view"
+                    app:layout_constraintTop_toBottomOf="@id/hfl_subcategories_recycler_view"
+                    app:layout_constraintBottom_toTopOf="@id/hfl_requests_title_text_view"
+                    android:paddingLeft="10dp"
+                    />
+
+
+
+                <TextView
+                    android:paddingLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Random Requests"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/black"
+                    android:gravity="center|left"
+                    android:textSize="17sp"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/hfl_requests_title_text_view"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/hfl_subcategories_recycler_view"
+                    app:layout_constraintBottom_toTopOf="@id/requests_recycler_view"
+                    />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:id="@+id/requests_recycler_view"
+                    app:layout_constraintTop_toBottomOf="@id/hfl_requests_title_text_view"
+                    android:paddingLeft="10dp"
+                    />
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

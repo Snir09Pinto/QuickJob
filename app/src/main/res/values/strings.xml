@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="underline_login">
+        <u>Login</u>
+    </string>
+    <string name="underline_register">
+        <u>Register</u>
+    </string>
+    <string name="underline_link">
+        <u></u>
+    </string>
+
+    <string name="api_key">AIzaSyAImvhDFRFx_BtSkYSpc_7by4znMCrS-hw</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

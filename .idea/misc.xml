@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/category_and_subcategory_item_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/chat_item_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/chats_list_fragment_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/create_offer_activity_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/create_request_activity_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/custom_marker_info_window_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/dropdown_item_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/edit_user_profile_activity_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/home_fragment_layout.xml" value="0.3442028985507246" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/item_container_received_message_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/item_container_sent_message_layout.xml" value="0.1" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/launch_manager_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/login_activity_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/main_activity_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/map_activity_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/map_fragment_layout.xml" value="0.3442028985507246" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/multi_offers_fragment_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/multi_requests_fragment_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/offer_item_card_view_horizontal_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/offer_user_of_offer_view_activity_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/offer_user_of_request_view_activity_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/offline_request_others_view_activity_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/offline_request_user_view_activity_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/online_request_others_view_activity_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/online_request_user_view_activity_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/post_user_review_activity_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/profile_fragment_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/register_activity_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/request_item_cardview_horizontal_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/request_item_cardview_vertical_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/requests_search_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/review_item_cardview_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/search_fragment_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/subcategory_item_cardview_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/user_info_bottom_sheet_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/user_offers_activity_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/user_pending_requests_fragment_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/user_requests_activity_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/user_reviews_activity_layout.xml" value="0.5541666666666667" />
+        <entry key="..\:/Users/snir1/AndroidProjects/Project/app/src/main/res/layout/view_request_offers_layout.xml" value="0.5541666666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

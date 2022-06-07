@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="30dp"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post a review"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="25sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="20dp"
+            android:id="@+id/page_title_text_view"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Description"
+            app:layout_constraintTop_toBottomOf="@id/page_title_text_view"
+            app:layout_constraintStart_toStartOf="@id/request_description_edit_text"
+            android:id="@+id/pural_offer_description_title_text_view"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:gravity="center|left"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_margin="10dp"
+            android:id="@+id/request_description_edit_text"
+            app:layout_constraintTop_toBottomOf="@id/pural_offer_description_title_text_view"
+            android:gravity="top|left"
+            />
+
+        <RatingBar
+            android:id="@+id/pural_rating_bar"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:theme="@style/GoldenRatingBar"
+            app:layout_constraintTop_toBottomOf="@id/request_description_edit_text"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:id="@+id/pural_submit_button"
+            android:backgroundTint="@color/light_green"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="Submit"
+            android:background="@drawable/rounded_background"
+            android:fontFamily="@font/open_sans_bold"
+            app:layout_constraintTop_toBottomOf="@id/pural_rating_bar"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/pural_cancel_button"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:id="@+id/pural_cancel_button"
+            android:backgroundTint="@color/light_green"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/light_green"
+            android:textSize="15sp"
+            android:text="Cancel"
+            app:layout_constraintTop_toBottomOf="@id/pural_rating_bar"
+            android:background="@drawable/custom_transparent_button"
+            android:fontFamily="@font/open_sans_bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/pural_submit_button"
+            />
+
+        <Space
+            app:layout_constraintTop_toBottomOf="@id/pural_cancel_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

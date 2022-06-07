@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:elevation="0dp"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true"
+    app:cardCornerRadius="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/ricl_user_image_card_view"
+                app:cardCornerRadius="100dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardPreventCornerOverlap="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_margin="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ricl_author_image_image_view"
+                    android:scaleType="fitXY"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text=""
+                android:id="@+id/ricl_author_user_name_text_view"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:layout_constraintBottom_toBottomOf="@id/ricl_user_image_card_view"
+                app:layout_constraintTop_toTopOf="@id/ricl_user_image_card_view"
+                app:layout_constraintStart_toEndOf="@+id/ricl_user_image_card_view"
+                android:gravity="center|left"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textSize="13sp"
+                android:text=""
+                android:layout_margin="10dp"
+                android:id="@+id/ricl_review_description_text_view"
+                app:layout_constraintTop_toBottomOf="@id/ricl_user_image_card_view"
+                app:layout_constraintRight_toRightOf="parent"
+                android:breakStrategy="simple"
+                android:ellipsize="end"
+                app:layout_constraintStart_toStartOf="@id/ricl_user_image_card_view"
+                android:textColor="@color/black"
+                android:fontFamily="@font/open_sans_bold"
+                android:textStyle="bold"
+                />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/ricl_review_description_text_view"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/star_icon"
+                android:background="@drawable/star_ic"
+                android:layout_margin="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="20dp"
+                app:layout_constraintStart_toEndOf="@id/star_icon"
+                app:layout_constraintTop_toTopOf="@id/star_icon"
+                app:layout_constraintBottom_toBottomOf="@id/star_icon"
+                android:textColor="@color/star_orange_color"
+                android:text=""
+                app:layout_constraintRight_toLeftOf="@id/star_icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:id="@+id/ricl_review_rating_text_view"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text=""
+                android:layout_margin="8dp"
+                android:layout_gravity="center|right"
+                android:gravity="center|right"
+                android:id="@+id/ricl_review_date_and_time_text_view"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/pfl_parent_view_constraint_layout"
+                    >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/pfl_user_image_card_view"
+                            app:cardCornerRadius="100dp"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardPreventCornerOverlap="true"
+                            android:layout_marginBottom="5dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_margin="20dp"
+                            >
+
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/pfl_user_image_image_view"
+                                    android:scaleType="centerCrop"
+                                    android:backgroundTint="@color/black"
+                                    />
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="@id/pfl_user_image_card_view"
+                            app:layout_constraintTop_toTopOf="@id/pfl_user_image_card_view"
+                            app:layout_constraintStart_toEndOf="@id/pfl_user_image_card_view"
+                            android:textSize="30sp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text=""
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginRight="20dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/black"
+                            android:id="@+id/pfl_user_name_text_view"
+                            android:textStyle="bold"
+                            />
+
+
+
+
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:id="@+id/phone_icon"
+                                    android:background="@drawable/phone_icon"
+                                    android:backgroundTint="@color/dark_gray"
+                                    app:layout_constraintStart_toStartOf="@id/pfl_user_image_card_view"
+                                    android:layout_marginTop="30dp"
+                                    android:layout_marginLeft="10dp"
+                                    app:layout_constraintTop_toBottomOf="@id/pfl_user_image_card_view"
+                                    />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    android:layout_marginRight="50dp"
+                                    app:layout_constraintStart_toEndOf="@id/phone_icon"
+                                    android:textColor="@color/dark_gray"
+                                    android:textSize="18sp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text=""
+                                    android:layout_marginLeft="5dp"
+                                    app:layout_constraintTop_toTopOf="@id/phone_icon"
+                                    app:layout_constraintBottom_toBottomOf="@id/phone_icon"
+                                    android:id="@+id/user_phone_text_view"
+                                    />
+
+
+
+
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:id="@+id/email_icon"
+                                    android:background="@drawable/email_icon"
+                                    android:backgroundTint="@color/dark_gray"
+                                    android:layout_marginTop="10dp"
+                                    app:layout_constraintStart_toStartOf="@id/phone_icon"
+                                    app:layout_constraintTop_toBottomOf="@id/phone_icon"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/user_email_text_view"
+                                    android:layout_width="0dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    android:layout_marginRight="50dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text=""
+                                    android:textColor="@color/dark_gray"
+                                    android:textSize="18sp"
+                                    app:layout_constraintStart_toEndOf="@id/email_icon"
+                                    app:layout_constraintTop_toTopOf="@id/email_icon"
+                                    app:layout_constraintBottom_toBottomOf="@id/email_icon"/>
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:id="@+id/divider1"
+                            app:layout_constraintTop_toBottomOf="@id/email_icon"
+                            android:background="#DDDDDD"
+                            android:layout_marginTop="10dp"
+                            />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="130dp"
+                            android:id="@+id/pfl_divider2"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/divider1"
+                            app:layout_constraintBottom_toTopOf="@id/pfl_divider3"
+                            android:background="#DDDDDD"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:id="@+id/pfl_divider3"
+                            app:layout_constraintTop_toBottomOf="@id/divider1"
+                            android:background="#DDDDDD"
+                            android:layout_marginTop="130dp"
+                            />
+
+
+
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pfl_user_completed_requests_constraint_layout"
+                            app:layout_constraintTop_toBottomOf="@id/divider1"
+                            android:layout_marginTop="20dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@id/pfl_divider2"
+                            >
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/check_circle_icon"
+                                    android:backgroundTint="@color/green_gradient_color_start"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    android:id="@+id/pfl_check_circle_icon"
+                                    />
+
+
+                                <TextView
+                                    android:id="@+id/pfl_user_completed_requests_text_view"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toEndOf="@id/pfl_check_circle_icon"
+                                    android:text=""
+                                    android:paddingTop="10dp"
+                                    android:textSize="22sp"
+                                    android:textColor="@color/black"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    />
+
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@id/pfl_user_completed_requests_constraint_layout"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="@id/pfl_divider2"
+                            android:text="Completed Requests"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textSize="17sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/poppins_regular"
+                            />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pfl_user_rating_constraint_layout"
+                            app:layout_constraintLeft_toRightOf="@id/pfl_divider2"
+                            app:layout_constraintTop_toBottomOf="@id/divider1"
+                            app:layout_constraintRight_toRightOf="parent"
+                            android:layout_marginTop="20dp"
+                            >
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:background="@drawable/star_ic"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    android:id="@+id/star_icon"
+                                    />
+
+
+                                <TextView
+                                    android:id="@+id/pfl_user_rating_text_view"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintTop_toTopOf="@id/star_icon"
+                                    app:layout_constraintBottom_toBottomOf="@id/star_icon"
+                                    android:paddingTop="10dp"
+                                    app:layout_constraintStart_toEndOf="@id/star_icon"
+                                    android:text=""
+                                    android:textSize="22sp"
+                                    android:textColor="@color/black"
+                                    android:ellipsize="end"
+                                    android:maxLines="2"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@id/pfl_user_rating_constraint_layout"
+                            app:layout_constraintStart_toStartOf="@id/pfl_divider2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:text="Rating"
+                            android:textSize="17sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@id/pfl_divider3"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            android:id="@+id/pfl_buttons_constraint_layout"
+                            >
+                                <com.google.android.material.button.MaterialButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:backgroundTint="@color/light_gray"
+                                    app:iconTint="@color/black"
+                                    app:icon="@drawable/request_ic"
+                                    app:iconSize="30dp"
+                                    android:text="My Requests"
+                                    android:fontFamily="@font/nunito_sans_regular"
+                                    android:textStyle="bold"
+                                    app:iconGravity="start"
+                                    android:paddingLeft="20dp"
+                                    android:textSize="22sp"
+                                    android:textColor="@color/black"
+                                    android:gravity="left|center"
+                                    app:iconPadding="15dp"
+                                    android:textAllCaps="false"
+                                    android:insetTop="0dp"
+                                    android:insetBottom="0dp"
+                                    android:insetLeft="0dp"
+                                    android:insetRight="0dp"
+                                    android:id="@+id/pfl_user_requests_button"
+                                    app:cornerRadius="0dp"
+                                    />
+
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    app:layout_constraintTop_toBottomOf="@id/pfl_user_requests_button"
+                                    android:backgroundTint="@color/light_gray"
+                                    app:iconTint="@color/black"
+                                    app:icon="@drawable/offer_ic"
+                                    app:iconSize="30dp"
+                                    android:text="My Offers"
+                                    android:fontFamily="@font/nunito_sans_regular"
+                                    android:textStyle="bold"
+                                    app:iconGravity="start"
+                                    android:paddingLeft="20dp"
+                                    android:textSize="22sp"
+                                    android:textColor="@color/black"
+                                    android:gravity="left|center"
+                                    app:iconPadding="15dp"
+                                    android:textAllCaps="false"
+                                    android:insetTop="0dp"
+                                    android:insetBottom="0dp"
+                                    android:insetLeft="0dp"
+                                    android:insetRight="0dp"
+                                    android:id="@+id/pfl_user_offers_button"
+                                    app:cornerRadius="0dp"
+
+                                    />
+
+
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    app:layout_constraintTop_toBottomOf="@id/pfl_user_offers_button"
+                                    android:backgroundTint="@color/light_gray"
+                                    app:iconTint="@color/black"
+                                    app:icon="@drawable/review_ic"
+                                    app:iconSize="30dp"
+                                    android:text="My Reviews"
+                                    android:fontFamily="@font/nunito_sans_regular"
+                                    android:textStyle="bold"
+                                    app:iconGravity="start"
+                                    android:paddingLeft="20dp"
+                                    android:textSize="22sp"
+                                    android:textColor="@color/black"
+                                    android:gravity="left|center"
+                                    app:iconPadding="15dp"
+                                    android:textAllCaps="false"
+                                    android:insetTop="0dp"
+                                    android:insetBottom="0dp"
+                                    android:insetLeft="0dp"
+                                    android:insetRight="0dp"
+                                    android:id="@+id/pfl_user_reviews_button"
+                                    app:cornerRadius="0dp"
+                                    />
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    app:layout_constraintTop_toBottomOf="@id/pfl_user_reviews_button"
+                                    android:backgroundTint="@color/light_gray"
+                                    app:iconTint="@color/black"
+                                    app:icon="@drawable/edit_ic"
+                                    app:iconSize="30dp"
+                                    android:text="Edit Profile"
+                                    android:fontFamily="@font/nunito_sans_regular"
+                                    android:textStyle="bold"
+                                    app:iconGravity="start"
+                                    android:paddingLeft="20dp"
+                                    android:textSize="22sp"
+                                    android:textColor="@color/black"
+                                    android:gravity="left|center"
+                                    app:iconPadding="15dp"
+                                    android:textAllCaps="false"
+                                    android:insetTop="0dp"
+                                    android:insetBottom="0dp"
+                                    android:id="@+id/pfl_user_edit_profile_button"
+                                    app:cornerRadius="0dp"
+
+                                    />
+
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:id="@+id/pfl_divider4"
+                            app:layout_constraintTop_toBottomOf="@id/pfl_buttons_constraint_layout"
+                            android:background="#DDDDDD"
+                            />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:layout_constraintTop_toBottomOf="@id/pfl_divider4"
+                            android:backgroundTint="@color/light_gray"
+                            app:iconTint="#F44336"
+                            app:icon="@drawable/logout_ic"
+                            app:iconSize="30dp"
+                            android:text="Log Out"
+                            android:fontFamily="@font/nunito_sans_regular"
+                            android:textStyle="bold"
+                            app:iconGravity="start"
+                            android:paddingLeft="25dp"
+                            android:textSize="22sp"
+                            android:textColor="#F44336"
+                            android:gravity="left|center"
+                            app:iconPadding="15dp"
+                            android:textAllCaps="false"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"
+                            android:insetLeft="0dp"
+                            android:insetRight="0dp"
+                            android:id="@+id/pfl_logout_button"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:cornerRadius="0dp"
+                            />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </LinearLayout>
+
+
+
+</ScrollView>
+
+

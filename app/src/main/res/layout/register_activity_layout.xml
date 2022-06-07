@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:layout_gravity="center"
+                android:id="@+id/ral_page_title_text_view"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/ral_user_image_card_view"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ral_page_title_text_view"
+                app:cardCornerRadius="100dp"
+                app:layout_constraintBottom_toTopOf="@id/ral_user_name_text_input_layout"
+                app:cardBackgroundColor="@color/light_gray"
+                app:cardPreventCornerOverlap="true"
+                android:layout_marginBottom="5dp"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ral_user_image_image_view"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/ral_camera_ic_image_view"
+                        android:background="@drawable/camera_icon"
+                        android:scaleType="centerCrop"
+                        />
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxBackgroundColor="@color/light_gray"
+                app:hintTextColor="@color/black"
+                android:id="@+id/ral_user_name_text_input_layout"
+                android:textColorHint="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/ral_user_image_card_view"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/ral_user_email_text_input_layout"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:id="@+id/ral_user_name_text_input_edit_text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxBackgroundColor="@color/light_gray"
+                app:hintTextColor="@color/black"
+                android:id="@+id/ral_user_email_text_input_layout"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ral_user_name_text_input_layout"
+                app:layout_constraintBottom_toTopOf="@id/ral_user_phone_text_input_layout"
+                android:textColorHint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:id="@+id/ral_user_email_text_input_edit_text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxBackgroundColor="@color/light_gray"
+                app:hintTextColor="@color/black"
+                android:id="@+id/ral_user_phone_text_input_layout"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ral_user_email_text_input_layout"
+                app:layout_constraintBottom_toTopOf="@id/ral_user_password_text_input_layout"
+                android:textColorHint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:id="@+id/ral_user_phone_text_input_edit_text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxBackgroundColor="@color/light_gray"
+                app:hintTextColor="@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ral_user_phone_text_input_layout"
+                app:layout_constraintBottom_toTopOf="@id/ral_confirm_user_password_text_input_layout"
+                android:id="@+id/ral_user_password_text_input_layout"
+                android:textColorHint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:id="@+id/ral_user_password_text_input_edit_text"
+                    android:password="true"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm password"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxBackgroundColor="@color/light_gray"
+                app:hintTextColor="@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ral_user_password_text_input_layout"
+                android:textColorHint="@color/black"
+                android:id="@+id/ral_confirm_user_password_text_input_layout"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/black"
+                    android:password="true"
+                    android:id="@+id/ral_confirm_user_password_text_input_edit_text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/dark_gray_background"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ral_confirm_user_password_text_input_layout"
+                android:id="@+id/ral_register_button"
+                />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Already have an account?"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_regular"
+                android:id="@+id/ral_question_text_view"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ral_register_button"
+                app:layout_constraintEnd_toStartOf="@id/ral_login_text_view"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_green"
+                android:text="@string/underline_login"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_regular"
+                android:clickable="true"
+                app:layout_constraintStart_toEndOf="@id/ral_question_text_view"
+                app:layout_constraintTop_toBottomOf="@id/ral_register_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/ral_login_text_view"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_gray"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitle=""
+        app:title=""
+        app:titleTextColor="@color/light_green"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/user_name_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center|left"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/cal_user_image_card_view"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cal_user_image_card_view"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/white"
+                app:cardBackgroundColor="@color/light_gray"
+                app:cardCornerRadius="100dp"
+                app:cardPreventCornerOverlap="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/cal_user_image_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/profile_ic"
+                    android:backgroundTint="@color/white"
+                    android:scaleType="centerCrop" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_gray"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:id="@+id/divider"
+        />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cal_messages_recycler_view"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:padding="20dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/cal_send_button"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        android:windowSoftInputMode="adjustResize"
+        />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/cal_send_button"
+        app:cardCornerRadius="100dp"
+        android:backgroundTint="@color/light_green"
+        app:cardBackgroundColor="@color/light_gray"
+        app:cardPreventCornerOverlap="true"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp"
+        >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:scaleType="centerCrop"
+                android:background="@drawable/send_ic"
+                />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:id="@+id/cal_text_input"
+        android:hint="Type a message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cal_send_button"
+        app:layout_constraintBottom_toBottomOf="@id/cal_send_button"
+        android:layout_margin="10dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintEnd_toStartOf="@id/cal_send_button"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

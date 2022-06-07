@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_gray"
+    android:fitsSystemWindows="true"
+    >
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/toolbar"
+        app:title=""
+        app:subtitle=""
+        android:background="@color/white"
+        app:titleTextColor="@color/light_green"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/dark_gray"
+        android:id="@+id/divider"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:elevation="4dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/rsl_radio_buttons_layout"
+        >
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_height="60dp"
+                android:id="@+id/rsl_all_requests_filter_button"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="All"
+                android:textAllCaps="false"
+                android:textSize="11sp"
+                android:background="@drawable/radio_buttons_selector"
+                android:textColor="@drawable/radio_buttons_text_color_selector"
+                android:layout_margin="5dp"
+                android:checked="true"
+                />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_height="60dp"
+                android:id="@+id/rsl_online_requests_filter_button"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="Online"
+                android:textAllCaps="false"
+                android:textSize="11sp"
+                android:background="@drawable/radio_buttons_selector"
+                android:textColor="@drawable/radio_buttons_text_color_selector"
+                android:layout_margin="5dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_height="60dp"
+                android:id="@+id/rsl_offline_requests_filter_button"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="Offline"
+                android:textSize="11sp"
+                android:textAllCaps="false"
+                android:background="@drawable/radio_buttons_selector"
+                android:textColor="@drawable/radio_buttons_text_color_selector"
+                android:layout_margin="5dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/rsl_date_and_time_requests_filter_button"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="Deadline"
+                android:textSize="11sp"
+                android:textAllCaps="false"
+                android:background="@drawable/radio_buttons_selector"
+                android:textColor="@drawable/radio_buttons_text_color_selector"
+                android:layout_margin="5dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_height="60dp"
+                android:id="@+id/rsl_offers_quantity_filter_button"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="Offers quantity"
+                android:textAllCaps="false"
+                android:textSize="11sp"
+                android:background="@drawable/radio_buttons_selector"
+                android:textColor="@drawable/radio_buttons_text_color_selector"
+                android:layout_margin="5dp"
+                app:layout_constraintTop_toBottomOf="@id/rsl_online_requests_filter_button"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@id/rsl_date_and_time_requests_filter_button"
+                />
+
+    </RadioGroup>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/requests_recycler_view"
+        app:layout_constraintTop_toBottomOf="@id/rsl_radio_buttons_layout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
