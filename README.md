@@ -75,7 +75,7 @@ This feature uses Google Directions API.
 # Choose Request's location
 This feature uses Leku's location picker since Google Place Picker is deprecated.
 
-Link: https://github.com/AdevintaSpain/Leku
+Github Link: https://github.com/AdevintaSpain/Leku
 
 ![image](https://user-images.githubusercontent.com/55055840/173355811-5596bcf4-0cd2-41b0-8259-9bee19b4dfbe.png)
 
