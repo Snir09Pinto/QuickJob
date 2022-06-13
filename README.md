@@ -30,6 +30,7 @@ An android app for casual services (Requests and Offers).
 
 # Map Page 
 The search bar uses Google Places API for Autocomplete places results.
+
 ![image](https://user-images.githubusercontent.com/55055840/173355171-cca01aa1-f234-4f4b-8d4f-168bacd2cf29.png)
 
 # Profile Page
@@ -65,6 +66,7 @@ The search bar uses Google Places API for Autocomplete places results.
 
 # Request's Location Details
 This feature uses Google Directions API.
+
 ![image](https://user-images.githubusercontent.com/55055840/173355473-8be5a78b-66f9-4de3-8452-19eefc44fa27.png)
 
 # Request's offers Page
@@ -73,5 +75,6 @@ This feature uses Google Directions API.
 # Choose Request's location
 This feature uses Leku's location picker since Google Place Picker is deprecated.
 Link: https://github.com/AdevintaSpain/Leku
+
 ![image](https://user-images.githubusercontent.com/55055840/173355811-5596bcf4-0cd2-41b0-8259-9bee19b4dfbe.png)
 
